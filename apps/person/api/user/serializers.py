@@ -42,7 +42,7 @@ def handle_upload_profile_picture(instance, file):
     if instance and file:
         name, ext = os.path.splitext(file.name)
         username = instance.user.username
-        instance.picture.save('%s.%s' % (username, ext), file, save=False)
+        instance.picture.save('%s%s' % (username, ext), file, save=False)
         instance.save(update_fields=['picture'])
 
 
