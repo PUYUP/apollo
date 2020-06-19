@@ -1,2 +1,2 @@
 web: gunicorn apollo.wsgi --log-file -
-worker: python manage.py celery worker --loglevel=info --beat
+worker: celery -A apollo worker -l info
