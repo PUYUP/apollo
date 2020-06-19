@@ -1,1 +1,1 @@
-web: gunicorn pluto.wsgi --log-file -
+web: gunicorn apollo.wsgi --log-file -
