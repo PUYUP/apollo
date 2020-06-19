@@ -1,0 +1,1 @@
+web: gunicorn pluto.wsgi --log-file -
