@@ -21,6 +21,15 @@ DATABASES = {
 }
 
 
+# Static files (CSS, JavaScript, Images)
+# ------------------------------------------------------------------------------
+# https://docs.djangoproject.com/en/2.2/howto/static-files/
+STATIC_URL = '/static/'
+STATICFILES_DIRS = (
+    os.path.join(PROJECT_PATH, '{0}/static/'.format(PUBLIC_DIR_NAME)),
+)
+
+
 # SENDGRID
 EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_HOST_USER = 'apikey'
