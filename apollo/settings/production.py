@@ -10,9 +10,9 @@ DEBUG = False
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', '[::1]', 'marketion.herokuapp.com']
 
 
-# Sentry
+# SENTRY
 sentry_sdk.init(
-    dsn="https://4e67ab469e844d3eb9d4aa5f71a97dba@o400235.ingest.sentry.io/5258558",
+    dsn="https://08b6a2d0e4f947d7a966a7921ffa76dc@o400235.ingest.sentry.io/5282976",
     integrations=[DjangoIntegration()],
 
     # If you wish to associate users to errors (assuming you are using
