@@ -1,2 +1,1 @@
-web: gunicorn apollo.wsgi --log-file -
-worker: celery -A apollo worker -l info
+web: env > .env; env PYTHONUNBUFFERED=true honcho start -f Procfile.real 2>&1
