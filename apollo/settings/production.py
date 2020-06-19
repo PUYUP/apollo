@@ -58,6 +58,9 @@ X_FRAME_OPTIONS = 'DENY'
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(PROJECT_PATH, '{0}/static/'.format(PUBLIC_DIR_NAME))
 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(PROJECT_PATH, '{0}/media/'.format(PUBLIC_DIR_NAME))
+
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
